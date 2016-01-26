@@ -44,6 +44,13 @@ Add the following dependencies in your build.gradle file. Please note that these
 
 
 ```Java
+//Make sure to specify AndroidJUnitRunner as the default test instrumentation runner in your project.
+android {
+    defaultConfig {
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     // Required -- JUnit 4 framework
