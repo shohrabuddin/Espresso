@@ -46,7 +46,11 @@ Add the following dependencies in your build.gradle file. Please note that these
 ```Java
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Required -- JUnit 4 framework
     testCompile 'junit:junit:4.12'
+    // Optional -- Mockito framework
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    
     androidTestCompile 'com.android.support.test:runner:0.4'
     androidTestCompile 'com.android.support.test:rules:0.4'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
